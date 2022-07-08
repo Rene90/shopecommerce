@@ -4,6 +4,7 @@ import { getFirestore, collection, getDocs } from 'firebase/firestore/lite';
 // import { } from 'firebase/<service>';
 import firebase from "firebase/compat/app";
 import "firebase/compat/auth";
+//import { getAuth } from "firebase/auth";
 // TODO: Replace the following with your app's Firebase project configuration
 const firebaseConfig = {
     apiKey: "AIzaSyCYCdlEjx7UFudqlyHU011E02AvIguaThw",
@@ -16,7 +17,8 @@ const firebaseConfig = {
   // Initialize Firebase
   // firebase.initializeApp(firebaseConfig);
   firebase.initializeApp(firebaseConfig);
-   
+  //const firebaseApp = initializeApp(firebaseConfig)
   // export
   export const auth = firebase.auth();
+  //export const auth = getAuth();
   export const googleAuthProvider = new firebase.auth.GoogleAuthProvider(); 
